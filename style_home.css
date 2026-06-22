@@ -1,0 +1,432 @@
+/* Reset padrão e tipografia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    padding-top: 90px;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: auto; 
+}
+
+a {
+    text-decoration: none;
+}
+
+/*CABEÇALHO*/
+#cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(40, 40, 106);
+}
+
+#cabecalho .container {
+    padding: 15px 0;
+}
+
+.logo img {
+    float: left;
+    height: 60px;
+}
+
+#menu {
+    float: right;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu li {
+    float: left;
+    margin-left: 30px;
+}
+
+#menu a {
+    color: #fff;
+    font-size: 16px;
+    transition: color .3s;
+}
+
+#menu a:hover {
+    color: rgb(31, 175, 188);
+}
+
+#botao-menu {
+    background-color: rgb(31, 175, 188);
+    padding: 8px 18px;
+    border-radius: 0 10px 0 10px;
+}
+
+#botao-menu:hover {
+    background-color: #fff;
+    color: rgb(40, 40, 106) !important;
+}
+
+/* --- INÍCIO (HERO) --- */
+#inicio {
+    padding: 60px 0;
+}
+
+#img-dentista {
+    float: right;
+    width: 45%;
+    border-radius: 0 40px 0 40px;
+}
+
+#texto-inicio {
+    float: left;
+    width: 50%;
+}
+
+#texto-inicio h1 {
+    color: rgb(35, 35, 114);
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+#texto-inicio p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+#botao-agendar {
+    display: block;
+    width: 200px;
+    background-color: rgb(31, 175, 188);
+    color: #fff;
+    text-align: center;
+    padding: 14px 0;
+    font-weight: bold;
+    border-radius: 0 12px 0 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+    transition: background-color .3s;
+}
+
+#botao-agendar:hover {
+    background-color: rgb(24, 138, 148);
+}
+
+/* CONHEÇA-NOS */
+#conheca-nos {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+#img-equipe {
+    float: left;
+    width: 40%;
+    border-radius: 0 40px 0 40px;
+}
+
+#texto-conheca {
+    float: right;
+    width: 55%;
+}
+
+#texto-conheca h2 {
+    color: rgb(35, 35, 114);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#texto-conheca p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+#lista-numeros {
+    list-style: none;
+    overflow: auto;
+}
+
+#lista-numeros li {
+    float: left;
+    width: 33%;
+    text-align: center;
+    border-left: 1px solid #ddd;
+}
+
+#lista-numeros li:first-child {
+    border-left: none;
+}
+
+#lista-numeros strong {
+    display: block;
+    color: rgb(31, 175, 188);
+    font-size: 26px;
+}
+
+/* ESPECIALIDADES */
+#especialidades {
+    padding: 60px 0;
+}
+
+#especialidades h2 {
+    color: rgb(35, 35, 114);
+    font-size: 32px;
+    text-align: center;
+}
+
+.subtitulo {
+    color: #666;
+    text-align: center;
+    margin: 10px 0 35px 0;
+}
+
+#lista-especialidades {
+    list-style: none;
+    overflow: auto;
+}
+
+#lista-especialidades li {
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 15px 0 15px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+#lista-especialidades li.ultima {
+    margin-right: 0;
+}
+
+#lista-especialidades h3 {
+    color: rgb(35, 35, 114);
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+#lista-especialidades p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/*AGENDAMENTO (FORMULÁRIO)*/
+#agendamento {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+#agendamento h2 {
+    color: rgb(35, 35, 114);
+    font-size: 32px;
+    text-align: center;
+}
+
+
+#formConsulta {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #f0f2f5;
+    border-radius: 0 20px 0 20px;
+    padding: 30px;
+}
+
+#formConsulta label {
+    display: block;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+#formConsulta input,
+#formConsulta select {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+#formConsulta input:focus,
+#formConsulta select:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(31, 175, 188);
+}
+
+#formConsulta p {
+    margin-bottom: 20px;
+}
+
+#botao-enviar {
+    width: 100%;
+    background-color: rgb(35, 35, 114);
+    color: #fff;
+    border: none;
+    border-radius: 0 12px 0 12px;
+    padding: 14px 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+#botao-enviar:hover {
+    background-color: rgb(23, 23, 80);
+}
+
+.escondido {
+    display: none;
+}
+
+#mensagemSucesso {
+    width: 500px;
+    margin: 20px auto 0 auto;
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 0 10px 0 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*RODAPÉ*/
+#rodape {
+    clear: both;
+    background-color: rgb(35, 35, 114);
+    padding: 20px 0;
+}
+
+#rodape p {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+/*médio*/
+@media screen and (min-width: 420px) and (max-width: 679px) {
+
+    .container {
+        width: 94%;
+    }
+
+    #img-dentista,
+    #texto-inicio,
+    #img-equipe,
+    #texto-conheca {
+        float: none;
+        width: 100%;
+    }
+
+    #img-dentista,
+    #img-equipe {
+        margin-bottom: 20px;
+    }
+
+    #lista-especialidades li {
+        width: 48%;
+        margin-bottom: 15px;
+    }
+
+    #lista-especialidades li.ultima,
+    #lista-especialidades li.direita {
+        margin-right: 0;
+    }
+
+    #formConsulta,
+    #mensagemSucesso {
+        width: 100%;
+    }
+
+    #menu li {
+        margin-left: 15px;
+    }
+}
+
+/*pequeno*/
+@media screen and (max-width: 419px) {
+
+    body {
+        padding-top: 140px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .logo img {
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+
+    #menu {
+        float: none;
+    }
+
+    #menu ul {
+        text-align: center;
+    }
+
+    #menu li {
+        float: none;
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    #img-dentista,
+    #texto-inicio,
+    #img-equipe,
+    #texto-conheca {
+        float: none;
+        width: 100%;
+    }
+
+    #img-dentista,
+    #img-equipe {
+        margin-bottom: 20px;
+    }
+
+    #texto-inicio h1 {
+        font-size: 28px;
+    }
+
+    #lista-numeros li {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    #lista-numeros li:first-child {
+        border-top: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    #lista-especialidades li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    #formConsulta,
+    #mensagemSucesso {
+        width: 100%;
+    }
+}

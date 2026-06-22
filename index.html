@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sorriso Curitiba - Clínica Odontológica</title>
+    <link rel="stylesheet" href="style_home.css">
+</head>
+<body>
+
+    <header id="cabecalho">
+        <div class="container">
+            <div class="logo">
+                <img src="logo.svg" alt="Sorriso Curitiba">
+            </div>
+
+            <nav id="menu">
+                <ul>
+                    <li><a href="#conheca-nos">Conheça-nos</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#agendamento" id="botao-menu">Agendar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="inicio">
+            <div class="container">
+                <img src="dentista.webp" alt="Dentista sorrindo no consultório" id="img-dentista">
+
+                <div id="texto-inicio">
+                    <h1>Bem-vindo à Sorriso Curitiba</h1>
+                    <p>Oferecemos os melhores serviços odontológicos para cuidar do seu sorriso com tecnologia e conforto. Venha nos conhecer!</p>
+                    <a href="#agendamento" id="botao-agendar">Agendar Consulta</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="conheca-nos">
+            <div class="container">
+                <img src="equipe.webp" alt="Equipe da Sorriso Curitiba" id="img-equipe">
+
+                <div id="texto-conheca">
+                    <h2>Conheça a Sorriso Curitiba</h2>
+                    <p>Há mais de 15 anos cuidando da saúde bucal dos curitibanos. Unimos tecnologia de ponta a um atendimento humanizado, com uma equipe dedicada a transformar consultas em momentos de cuidado e confiança.</p>
+
+                    <ul id="lista-numeros">
+                        <li><strong>15+</strong><br>Anos de experiência</li>
+                        <li><strong>8</strong><br>Especialistas</li>
+                        <li><strong>5000+</strong><br>Pacientes atendidos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="especialidades">
+            <div class="container">
+                <h2>Nossas Especialidades</h2>
+                <p class="subtitulo">Tratamentos completos para cada etapa do cuidado com o seu sorriso.</p>
+
+                <ul id="lista-especialidades">
+                    <li>
+                        <h3>Limpeza (Profilaxia)</h3>
+                        <p>Remoção de placa e tártaro para uma boca mais saudável.</p>
+                    </li>
+                    <li class="direita">
+                        <h3>Clareamento</h3>
+                        <p>Procedimentos seguros que deixam seu sorriso mais branco.</p>
+                    </li>
+                    <li>
+                        <h3>Aparelho (Ortodontia)</h3>
+                        <p>Correção do alinhamento dentário com acompanhamento próximo.</p>
+                    </li>
+                    <li class="ultima direita">
+                        <h3>Implante</h3>
+                        <p>Reposição de dentes perdidos com aparência natural.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="agendamento">
+            <div class="container">
+                <h2>Marque sua consulta</h2>
+                <p class="subtitulo">Preencha os dados abaixo e nossa equipe entrará em contato.</p>
+
+                <form id="formConsulta" method="post" action="obrigado.html">
+                    <p>
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+                    </p>
+
+                    <p>
+                        <label for="telefone">WhatsApp</label>
+                        <input type="text" id="telefone" name="telefone" required placeholder="(41) 90000-0000">
+                    </p>
+
+                    <p>
+                        <label for="especialidade">Especialidade</label>
+                        <select id="especialidade" name="especialidade" required>
+                            <option value="">Selecione...</option>
+                            <option value="limpeza">Limpeza (Profilaxia)</option>
+                            <option value="clareamento">Clareamento</option>
+                            <option value="ortodontia">Aparelho (Ortodontia)</option>
+                            <option value="implante">Implante</option>
+                        </select>
+                    </p>
+
+                    <input type="submit" id="botao-enviar" value="Solicitar Agendamento">
+                </form>
+
+                <div id="mensagemSucesso" class="escondido">
+                    <p>Solicitação enviada com sucesso! Em breve chamaremos no WhatsApp.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="rodape">
+        <div class="container">
+            <p>&copy; 2026 Sorriso Curitiba - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
