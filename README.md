@@ -30,5 +30,5 @@ O site foi construído no modelo de página única com navegação ancorada, div
 
 ## 🔗 Links do Projeto
 * **Link do Repositório:** [https://github.com/NicolasMarques18/Projeto_Clinica_Sorriso_Curitiba](https://github.com/NicolasMarques18/Projeto_Clinica_Sorriso_Curitiba)
-* **Link do GitHub Pages:** [https://nicolasmarques18.github.io/Projeto_Clinica_Sorriso_Curitiba/](https://nicolasmarques18.github.io/Projeto_Clinica_Sorriso_Curitiba/)
+* **Link do GitHub Pages:** [https://nicolasmarques18.github.io/Projeto_Clinica_Sorriso_Curitiba_/](https://nicolasmarques18.github.io/Projeto_Clinica_Sorriso_Curitiba_/)
 * **Vídeo de Apresentação no YouTube:** [https://www.youtube.com/watch?v=JepPWFtq7vk](https://www.youtube.com/watch?v=JepPWFtq7vk)
